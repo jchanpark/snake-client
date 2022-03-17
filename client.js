@@ -18,6 +18,11 @@ const connect = function () {
   conn.on('connect', () => {
     conn.write("Name: JAY");   
   })
+
+  conn.on('connect', () => {
+    conn.write("Say: Hi");   
+  })
+
   return conn;
 };
 
